@@ -9,15 +9,19 @@ namespace LINQ
         {
             string s = "hello";
             char[] c = s.ToCharArray();
-            var m = c.Select(x => Converter(x));
-            //m = c.Where(x => x == 'a').Select(x => x = '1');
-            //m = m.Where(x => x == 'e').Select(x => x = '2');            
-            //m = m.Where(x => x == 'i').Select(x => x = '3');
-            //m = m.Where(x => x == 'o').Select(x => x = '4');
-            //m = m.Where(x => x == 'u').Select(x => x = '5');
+            var m = c.Select(x => Converter(x));          
             foreach(var v in m)
             Console.Write(v);
             System.Console.WriteLine();
+            
+            
+            s = "h3 th2r2";
+            c = s.ToCharArray();
+            m = c.Select(x => Converter(x));
+            foreach(var v in m)
+            Console.Write(v);
+
+            
         }
         public static char Converter(char s){
             switch(s){
