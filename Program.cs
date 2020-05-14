@@ -32,6 +32,12 @@ namespace LINQ
                 case '*': System.Console.WriteLine(n1 * n2); break;
                 case '/': System.Console.WriteLine(n1 / n2); break;
             }
+            
+
+            System.Console.WriteLine();
+            s = "camelText";
+            s = String.Join("", s.ToCharArray().Select(x => char.IsUpper(x) == true ? " " + x.ToString().ToLower() : x.ToString()));
+            System.Console.WriteLine(s);
         }
         public static char Converter(char s){
             switch(s){
